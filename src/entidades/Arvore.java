@@ -19,8 +19,10 @@ public class Arvore implements IArvore{
 
     @Override
     public void Remover(int valor) {
-        a.remove(valor, a.root);
+        System.out.print("REMOÇÃO: ");
+        a.remove(valor, a.root, a.root.pai, true);
         Imprimir();
+        System.out.println("______________________________________");
     }
 
     @Override
@@ -41,7 +43,7 @@ public class Arvore implements IArvore{
 
     @Override
     public void Altura() {
-        System.out.println("Altura da árvore = " + a.height(a.root));
+//        System.out.println("Altura da árvore = " + a.height(a.root));
     }
     
 }

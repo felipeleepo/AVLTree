@@ -1,15 +1,16 @@
 package principal;
+
 import entidades.*;
 
 /**
  * @author 20161014040004
  */
 public class Main {
-    
-    public static void main(String[] args){
-        
+
+    public static void main(String[] args) {
+
         Arvore avl = new Arvore();
-        
+
         // Teste RES
 //        avl.Inserir(32);
 //        avl.Inserir(31);
@@ -25,15 +26,23 @@ public class Main {
 //        avl.Inserir(30);
 //        avl.Inserir(5);
         // Teste Dupla E
-       avl.Inserir(50);
-        avl.Inserir(20);
-        avl.Inserir(80);
-        avl.Inserir(70);
-        avl.Inserir(90);
-        avl.Inserir(65);
+//       avl.Inserir(50);
+//        avl.Inserir(20);
+//        avl.Inserir(80);
+//        avl.Inserir(70);
+//        avl.Inserir(90);
+//        avl.Inserir(65);
 //        avl.Buscar(65);
 //        avl.Remover(65);    
 //        avl.Buscar(65);
-        
+        // Teste Remoção
+        avl.Inserir(50);
+        avl.Inserir(60);
+        avl.Inserir(70);
+        avl.Inserir(75);
+        avl.Inserir(55);
+        avl.Inserir(80);
+        avl.Remover(60);
+
     }
 }
